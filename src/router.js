@@ -1,6 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import About from './views/About.vue'
+import Service from './views/Service.vue'
+import Security from './views/Security.vue'
+import Parts from './views/Parts.vue'
+import Contact from './views/Contact.vue'
+import orangeFooter from './components/FooterOrange.vue'
+import greyFooter from './components/FooterGrey.vue'
 
 Vue.use(Router)
 
@@ -11,15 +18,50 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      components: {
+        default: Home,
+        pageFooter: orangeFooter
+      }
     },
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
+      components: {
+        default: About,
+        pageFooter: greyFooter
+      }
+    },
+    {
+      path: '/service',
+      name: 'service',
+      components: {
+        default: Service,
+        pageFooter: orangeFooter
+      }
+    },
+    {
+      path: '/parts',
+      name: 'parts',
+      components: {
+        default: Parts,
+        pageFooter: orangeFooter
+      }
+    },
+    {
+      path: '/security',
+      name: 'security',
+      components: {
+        default: Security,
+        pageFooter: orangeFooter
+      }
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      components: {
+        default: Contact
+        // no footer
+      }
+    },
   ]
 })

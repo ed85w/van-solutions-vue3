@@ -1,0 +1,559 @@
+/* all css in here except navbar and footers  */
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap */
+
+/* whole of site styles */
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #595959;
+}
+
+h5 {
+    color: white;
+    line-height: 27px;
+}
+
+.orange-text {
+    color: #ed6c1d;
+}
+
+.grey-text {
+    color: #383838;
+}
+.white-text{
+    color: white;
+}
+
+p{
+    color: white;
+    /* font-size: 0.8rem; */
+}
+
+.btn {
+    background-color: #fa9a55;
+    color: white;
+    border: 1px solid #ed6c1d;
+    margin-bottom: 20px;
+}
+.btn:hover{
+    color: #595959;
+}
+
+.btn-grey{
+    background-color:#7c7a7a;
+    color: white;
+    border: 1px solid #595959;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn-grey:hover{
+    color: #ed6c1d;
+}
+
+img {
+    width: 100%;
+}
+
+.bg-grey-orange {
+    background: -webkit-gradient(linear, left top, left bottom, from(#595959), color-stop(50%, #595959), color-stop(50%, #ed6c1d), to(#ed6c1d));
+    background: linear-gradient(#595959 0%, #595959 50%, #ed6c1d 50%, #ed6c1d 100%);
+}
+
+.bg-orange-grey {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ed6c1d), color-stop(50%, #ed6c1d), color-stop(50%, #595959), to(#595959));
+    background: linear-gradient(#ed6c1d 0%, #ed6c1d 50%, #595959 50%, #595959 100%);   
+}
+
+.bg-grey-orange-grey {
+    background: linear-gradient(#595959 0%, #595959 25%, #ed6c1d 25%, #ed6c1d 75%, #595959 75%, #595959 100%);
+}
+
+/* cookie consent button */
+.cc-floating .cc-compliance>.cc-btn,
+.cc-floating .cc-compliance>.cc-btn:hover,
+.cc-floating .cc-compliance>.cc-btn:focus {
+    background: #ed6c1d;
+}
+a.cc-btn.cc-dismiss,
+a.cc-btn.cc-dismiss:hover,
+a.cc-btn.cc-dismiss:focus {
+    background: #ed6c1d;
+}
+
+
+/* HOME PAGE */
+
+.logo{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    padding: 7px 7px 7px 7px;   
+    position:absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    z-index: 0;
+    background-color: white;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.home-main {
+    margin-top: 70px;
+}
+
+.stripes-container {
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 0;
+    background-color: transparent;
+}
+
+.stripes-stripes {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(20%, white), color-stop(20%, #595959), color-stop(40%, #595959), color-stop(40%, white), color-stop(60%, white), color-stop(60%, #ed6c1d), color-stop(80%, #ed6c1d), color-stop(80%, white), to(white));
+    background: linear-gradient(white 0%, white 20%, #595959 20%, #595959 40%, white 40%, white 60%, #ed6c1d 60%, #ed6c1d 80%, white 80%, white 100%)
+}
+
+.stripes-text {
+    display: none;
+}
+
+.home-main-div {
+    margin-top: 120px;
+}
+
+.home-main-image{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url('../img/van-solutions-van.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/van-solutions-van.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vw;
+    width: 100%;
+}
+
+.home-main-text-holder{
+    height: 600px;
+    width: 100%;
+}
+
+.home-main-text {
+    background-color: rgba(89, 89, 89, 0.9);
+}
+
+.lower-container {
+    /* height: 500px; */
+    border-style: solid;
+    border-width: 15px;
+    border-color: #ed6c1d;
+    background-color: #f19664;
+    padding-bottom: 15px;
+}
+
+.lower-container::before,
+.lower-container::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: -15px;
+    -webkit-transform: translate(50%);
+            transform: translate(50%);
+    width: 0;
+    height: 0;
+    z-index: 2;
+    width: 0; 
+    height: 0; 
+
+}
+.lower-container::before{
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid white;   
+}
+
+.lower-container::after{
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #595959;  
+}
+
+.home-lower-img img{
+    height: 250px;
+}
+
+/* ABOUT PAGE */
+.about-container {
+    margin-top:120px;
+}
+.about-col {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.about-row>:nth-child(2),
+.about-row>:last-child{
+    background-color:#fa9a55;
+    border: 10px solid #ed6c1d;
+    padding-top: 50px;
+}
+.about-row>:nth-child(3){
+    padding-top: 50px;
+}
+
+/* div triangles */
+.about-row>:not(:last-child)::before,
+.about-row>:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    right: 50%;
+    -webkit-transform: translate(50%);
+            transform: translate(50%);
+    width: 0;
+    height: 0;
+    z-index: 2;
+}
+
+/* all children of about-row */
+.about-row>*::before {
+    bottom: -49px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid white;
+    border-bottom:0px;
+}
+.about-row>*::after {
+    bottom: -38px;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;   
+}
+
+.about-row>:first-child::after,
+.about-row>:nth-child(3)::after {
+    border-top: 40px solid #595959;
+    border-bottom:0px;
+}
+
+.about-row>:nth-child(2)::after{
+    border-top: 40px solid #fa9a55;
+    border-bottom:0px;
+}
+
+.about-text {
+    position: initial;
+    width: 100%;
+    top: initial;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    padding: 0;
+    margin: 0;
+}
+
+/* SERVICE PAGE */
+
+.service-main-div {
+    margin-top: 120px;
+}
+
+.service-main-img {
+    background-image: url(../img/van-servicing.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.services-list {
+    color: white;
+    line-height: 1.25;
+    text-transform: capitalize;
+}
+
+.services-list li {
+    padding-bottom: 5px;
+}
+
+.orange-triangle::before,
+.orange-triangle::after {
+    top: -16px;
+}
+
+.orange-triangle::after{
+    border-top-color: #f19664;
+}
+
+/* SECURITY PAGE */
+.security-main-img {
+    background-image: url(../img/ups-van1.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    height: 50vw;
+}
+
+/* CONTACT PAGE */
+
+.contact-row {
+    background: -webkit-gradient(linear, left top, left bottom, from(#595959), color-stop(75%, #595959), color-stop(75%, #ed6c1d), to(#ed6c1d));
+    background: linear-gradient(#595959 0%, #595959 75%, #ed6c1d 75%, #ed6c1d 100%);
+}
+
+.contact-address {
+    background: #595959;
+}
+
+#map {
+    height: 300px;
+}
+
+form div.container div.row {
+    color: white;
+}
+
+span.asterix {
+    color: red;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    /* whole site settings */
+    button.btn{
+        margin-bottom: 0px;
+    }
+
+    .logo {
+      width: 156px;
+      height: 133px;
+      position:absolute;
+      top: 0;
+      left: 1.5rem;
+      -webkit-transform: translate(0%);
+              transform: translate(0%);
+      z-index: 2;
+      background-color: white;
+  }
+
+  .stripes-container {
+      height: 25px;
+      width: 100%;
+      max-width: 100%;
+      position: absolute;
+      top: 108px;
+      z-index: 1;
+      background-color: transparent;
+  }
+
+  .stripes-stripes {
+      display: inline-block;
+      margin-left: 7%;
+      height: 100%;
+      width: 66%;
+      -webkit-transform: skew(20deg);
+              transform: skew(20deg);
+      background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(20%, white), color-stop(20%, #595959), color-stop(40%, #595959), color-stop(40%, white), color-stop(60%, white), color-stop(60%, #ed6c1d), color-stop(80%, #ed6c1d), color-stop(80%, white), to(white));
+      background: linear-gradient(white 0%, white 20%, #595959 20%, #595959 40%, white 40%, white 60%, #ed6c1d 60%, #ed6c1d 80%, white 80%, white 100%)
+  }
+
+  .stripes-text {
+      display: inline-block;
+      height: 100%;
+      width: 25%;
+      -webkit-transform: skew(20deg);
+              transform: skew(20deg);
+      background-color: white;
+      margin-left: 5px;
+  }
+
+  .stripes-fill {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 4%;
+      background-color: white;
+  }
+
+  .stripes-text span.van-text {
+      position: absolute;
+      left: 5px;
+      top: -1px;
+      display: inline-block;
+      -webkit-transform: skew(-20deg);
+              transform: skew(-20deg);
+      color: #595959;
+      font-weight: bold;
+  }
+  .stripes-text span.solutions-text {
+      position: absolute;
+      left: 48px;
+      top: -1px;
+      display: inline-block;
+      -webkit-transform: skew(-20deg);
+              transform: skew(-20deg);
+      color: #ed6c1d;
+      font-weight: bold;
+  }
+
+  /* home page */
+  .home-main-div {
+      margin-top: 0px;
+  }
+
+  .home-main-image{
+      height: 600px;
+  }
+
+  .home-main-text-holder{
+        height: 600px       /* same as .home-main-image! */
+  }
+
+  .home-main-text-holder h5 {
+      font-size: 1rem;
+  }
+
+  .home-imgs-row img {
+      height: 20vw;
+  }
+
+  .home-imgs-row :first-child{
+      padding-left:0;
+  }
+
+  .home-imgs-row :last-child {
+      padding-right: 0;
+  }
+
+  /* ABOUT PAGE */
+  .about-container {
+      margin-top:120px;
+  }
+
+  .about-col {
+      height: 380px;
+  }
+  .about-col:nth-of-type(2){
+      padding-left: 50px;
+  }
+  .about-col>:last-of-type{
+      padding-right: 40px;
+  }
+
+  /* about-div triangles */
+  .about-row>:first-child::before {
+      border-top: 50px solid transparent;
+      border-left: 50px solid white;
+      border-bottom: 50px solid transparent;
+      top: 50%;
+      right: -100px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+  }
+  .about-row>:first-child::after {
+      border-top: 40px solid transparent;
+      border-left: 40px solid #595959;
+      border-bottom: 40px solid transparent;
+      top: 50%;
+      right: -79px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+  }
+  .about-row>:nth-child(3)::before {
+      border-top: 50px solid transparent;
+      border-right: 50px solid white;
+      border-bottom: 50px solid transparent;
+      top: 50%;
+      left: -100px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+  }
+  .about-row>:nth-child(3)::after {
+      border-top: 40px solid transparent;
+      border-right: 40px solid #595959;
+      border-bottom: 40px solid transparent;
+      top: 50%;
+      left: -79px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+  }
+  .about-text {
+      position: absolute;
+      width: 98%;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+  }
+
+    /* SERVICES PAGE */
+    .service-main-img {
+        height: 400px;
+    }
+
+    /* SECURITY PAGE */
+    .security-main-img {
+    height: 300px;
+    }
+
+}
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* whole of site settings */
+
+    h5{
+        /* font-size: 1.2rem; */
+    }
+
+    p{
+        /* font-size: 1rem; */
+    }
+
+    /* navbar */
+    ul.sidebar-nav li a {
+        font-size: 17px; 
+        padding: 10px 20px;
+        
+    }
+
+    .logo {
+        width: 164px;
+        height: 141px;
+        position:absolute;
+        top: 0;
+        left: 3rem;
+    }
+
+    .stripes-container {
+        height: 25px;
+        top: 116px;
+    }
+
+    /* home and parts pages - lower images */
+    .home-imgs-row img {
+        height: 20vw;
+        max-height: 500px;
+    }
+}
