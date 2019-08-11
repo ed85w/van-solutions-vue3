@@ -246,7 +246,7 @@ ul.sidebar-nav li a:hover {
 @media (min-width: 992px) {
 
     ul.sidebar-nav li a {
-        font-size: 20px; 
+        font-size: 17px; 
         padding: 10px 20px;
         
     }

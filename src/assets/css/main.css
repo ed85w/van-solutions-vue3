@@ -523,21 +523,6 @@ span.asterix {
 @media (min-width: 992px) {
     /* whole of site settings */
 
-    h5{
-        /* font-size: 1.2rem; */
-    }
-
-    p{
-        /* font-size: 1rem; */
-    }
-
-    /* navbar */
-    ul.sidebar-nav li a {
-        font-size: 17px; 
-        padding: 10px 20px;
-        
-    }
-
     .logo {
         width: 164px;
         height: 141px;
