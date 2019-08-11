@@ -2,12 +2,12 @@
   <div id="app-navbar">
     <nav class="sidebar text-center" v-bind:class="{ sidebarShow: showMobileMenu }">
       <ul class="sidebar-nav">
-        <li><router-link to="/" exact>Home</router-link></li>
-        <li><router-link to="/about" exact>About</router-link></li>
-        <li><router-link to="/service" exact>Service</router-link></li>
-        <li><router-link to="/parts" exact>Parts</router-link></li>
-        <li><router-link to="/security" exact>Security</router-link></li>
-        <li><router-link to="/contact" exact>Contact</router-link></li>
+        <li v-on:click="showMobileMenu = !showMobileMenu" v-bind:class="{ toggle: showMobileMenu }"><router-link to="/" exact>Home</router-link></li>
+        <li v-on:click="showMobileMenu = !showMobileMenu" v-bind:class="{ toggle: showMobileMenu }"><router-link to="/about" exact>About</router-link></li>
+        <li v-on:click="showMobileMenu = !showMobileMenu" v-bind:class="{ toggle: showMobileMenu }"><router-link to="/service" exact>Service</router-link></li>
+        <li v-on:click="showMobileMenu = !showMobileMenu" v-bind:class="{ toggle: showMobileMenu }"><router-link to="/parts" exact>Parts</router-link></li>
+        <li v-on:click="showMobileMenu = !showMobileMenu" v-bind:class="{ toggle: showMobileMenu }"><router-link to="/security" exact>Security</router-link></li>
+        <li v-on:click="showMobileMenu = !showMobileMenu" v-bind:class="{ toggle: showMobileMenu }"><router-link to="/contact" exact>Contact</router-link></li>
       </ul>
     </nav>
     <button class="sidebar-btn" v-on:click="showMobileMenu = !showMobileMenu" v-bind:class="{ toggle: showMobileMenu }">
@@ -18,6 +18,7 @@
 </template>
 
 <script>
+
 export default {
     data() {
         return{
@@ -25,6 +26,7 @@ export default {
         }
     }
 }
+
 </script>
 
 <style scoped>
@@ -244,7 +246,7 @@ ul.sidebar-nav li a:hover {
 @media (min-width: 992px) {
 
     ul.sidebar-nav li a {
-        font-size: 17px; 
+        font-size: 20px; 
         padding: 10px 20px;
         
     }
