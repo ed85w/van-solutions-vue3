@@ -95,7 +95,7 @@
         <!-- map -->
         <div class="col-sm-12 col-md-7 col-lg-5 offset-lg-2 order-md-1 pr-0 pl-0" >
           <!-- <div class="col-12" id="map"></div> -->
-          <div class="col-12">
+          <div class="col-12 pr-0 pl-0">
             <google-map></google-map>
           </div>
         </div>
